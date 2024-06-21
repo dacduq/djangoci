@@ -29,6 +29,7 @@ jobs:
         python manage.py test
 
   test:
+    needs: build
     runs-on: ubuntu-latest
     strategy:
       matrix:
